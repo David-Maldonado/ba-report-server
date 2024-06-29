@@ -6,7 +6,7 @@ export class DateFormatter {
         month: 'long',
         day: '2-digit'
     });
-    static getDDMMYYY(date:Date):string{
+    static getDDMMYYY(date:any):string{
      
 
         return this.formatter.format(date);

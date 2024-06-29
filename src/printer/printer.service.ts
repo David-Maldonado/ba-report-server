@@ -2,8 +2,6 @@ import { Injectable } from '@nestjs/common';
 import PdfPrinter from 'pdfmake';
 import { BufferOptions, CustomTableLayout, TDocumentDefinitions } from 'pdfmake/interfaces';
 
-
-
 var fonts = {
     Roboto: {
       normal: 'fonts/Roboto-Regular.ttf',
