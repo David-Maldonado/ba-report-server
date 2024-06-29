@@ -8,9 +8,7 @@ export class BasicReportsController {
 
   @Get()
   async hello( @Res() response: Response ) {
-    
     const pdfDoc =  this.basicReportsService.hello();
-
     response.setHeader('Content-Type', 'application/pdf');
     pdfDoc.info.Title = 'Hola mundo';
     pdfDoc.pipe(response);
